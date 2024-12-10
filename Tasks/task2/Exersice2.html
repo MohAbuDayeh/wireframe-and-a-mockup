@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Details Form</title>
+    <style>
+        fieldset {
+            border: 2px solid #000000; 
+            padding: 15px;
+            border-radius: 5px; 
+        }
+        legend {
+            font-weight: bold;
+            color: Personal Details
+            Personal Details#000000; 
+            padding: 0 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #000000;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+            
+        }
+        input[type="submit"]:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="salutation">Salutation:</label>
+        <select id="salutation" name="salutation">
+            <option value="none">--None--</option>
+        </select>
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" style="display: inline;">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" style="display: inline;">Female</label>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Enter your address"></textarea>
+
+        <input type="submit" value="Submit">
+    </fieldset>
+</form>
+
+</body>
+</html>

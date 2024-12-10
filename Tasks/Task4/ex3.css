@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfde2;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffff99;
+    border: 1px solid #ccc;
+}
+
+/* تصميم الجزء العلوي */
+.header {
+    background-color: #ffff99;
+    padding: 20px;
+    text-align: left; /* جعل النص يبدأ من اليسار */
+}
+
+h1 {
+    color: #000;
+    font-size: 36px; /* زيادة حجم الخط */
+    margin: 0;
+    font-weight: bold; /* جعل الخط أكثر سماكة */
+}
+
+/* تصميم الجزء الرئيسي */
+.content {
+    display: flex;
+}
+
+.left-column {
+    flex: 2;
+    padding: 20px;
+    background-color: #fff;
+    text-align: justify;
+}
+
+.right-column {
+    flex: 1;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+/* تصميم القائمة */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* تصميم الفوتر */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}

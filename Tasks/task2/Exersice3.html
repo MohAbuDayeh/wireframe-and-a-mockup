@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our First Form!</title>
+    <style>
+        form {
+            border: 2px dotted ; 
+            padding: 20px;
+            border-radius: 5px;
+            width: 400px;
+            
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block; 
+            width: 80px; 
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 120px); 
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: left;">Our First Form!</h1>
+    <form>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
